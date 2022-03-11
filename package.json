@@ -1,0 +1,19 @@
+{
+  "name": "tw-commerce",
+  "version": "1.0.0",
+  "description": "ecommerce base on tailwind css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./src/main.css -o ./public/assets/css/main.css -w"
+  },
+  "keywords": [],
+  "author": "Fajar Siagian",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0"
+  }
+}
