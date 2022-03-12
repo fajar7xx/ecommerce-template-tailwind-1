@@ -26,4 +26,8 @@
   .color-selector input:checked + label {
     @apply ring-2 ring-primary;
   }
+
+  .input-box {
+    @apply block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded placeholder-gray-400 focus:border-primary focus:ring-0;
+  }
 }
