@@ -1,5 +1,6 @@
 module.exports = {
   content: ["./public/**/*.{html, js}"],
+
   theme: {
     screen: {
       sm: "576px",
@@ -21,5 +22,7 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [
+    require("@tailwindcss/forms"),
+  ],
 };
