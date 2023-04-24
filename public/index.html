@@ -33,10 +33,10 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </span>
                 <input type="text" name="search" id="search"
-                    class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none"
+                    class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none hidden md:flex"
                     placeholder="search">
                 <button
-                    class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
+                    class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition hidden md:flex">Search</button>
             </div>
 
             <div class="flex items-center space-x-4">
@@ -72,11 +72,11 @@
     <!-- navbar -->
     <nav class="bg-gray-800">
         <div class="container flex">
-            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+            <div class="px-8 py-4 bg-primary md:flex items-center cursor-pointer relative group hidden">
                 <span class="text-white">
                     <i class="fa-solid fa-bars"></i>
                 </span>
-                <span class="capitalize ml-2 text-white">All Categories</span>
+                <span class="capitalize ml-2 text-white hidden">All Categories</span>
 
                 <!-- dropdown -->
                 <div
@@ -108,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="flex items-center justify-between flex-grow pl-12">
+            <div class="flex items-center justify-between flex-grow md:pl-12 py-5">
                 <div class="flex items-center space-x-6 capitalize">
                     <a href="index.html" class="text-gray-200 hover:text-white transition">Home</a>
                     <a href="pages/shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
@@ -140,7 +140,7 @@
 
     <!-- features -->
     <div class="container py-16">
-        <div class="w-10/12 grid grid-cols-3 gap-6 mx-auto justify-center">
+        <div class="w-10/12 grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto justify-center">
             <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
                 <img src="assets/images/icons/delivery-van.svg" alt="Delivery" class="w-12 h-12 object-contain">
                 <div>
@@ -209,7 +209,7 @@
     <!-- new arrival -->
     <div class="container pb-16">
         <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">top new arrival</h2>
-        <div class="grid grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div class="bg-white shadow rounded overflow-hidden group">
                 <div class="relative">
                     <img src="assets/images/products/product1.jpg" alt="product 1" class="w-full">
@@ -389,7 +389,7 @@
     <!-- product -->
     <div class="container pb-16">
         <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">recomended for you</h2>
-        <div class="grid grid-cols-4 gap-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div class="bg-white shadow rounded overflow-hidden group">
                 <div class="relative">
                     <img src="assets/images/products/product1.jpg" alt="product 1" class="w-full">
@@ -724,15 +724,15 @@
 
     <!-- footer -->
     <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
-        <div class="container grid grid-cols-3">
-            <div class="col-span-1 space-y-8">
+        <div class="container grid grid-cols-1 ">
+            <div class="col-span-1 space-y-4">
                 <img src="assets/images/logo.svg" alt="logo" class="w-30">
                 <div class="mr-2">
                     <p class="text-gray-500">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, hic?
                     </p>
                 </div>
-                <div class="flex space-x-6">
+                <div class="flex space-x-5">
                     <a href="#" class="text-gray-400 hover:text-gray-500"><i
                             class="fa-brands fa-facebook-square"></i></a>
                     <a href="#" class="text-gray-400 hover:text-gray-500"><i
@@ -745,8 +745,8 @@
                 </div>
             </div>
 
-            <div class="col-span-2 grid grid-cols-2 gap-8">
-                <div class="grid grid-cols-2 gap-8">
+            <div class="col-span-2 grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-2 gap-4 md:gap-8">
                     <div>
                         <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
                         <div class="mt-4 space-y-4">
@@ -761,7 +761,7 @@
                         <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Support</h3>
                         <div class="mt-4 space-y-4">
                             <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Pricing</a>
-                            <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Documentation</a>
+                            <!-- <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Documentation</a> -->
                             <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Guides</a>
                             <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">API Status</a>
                         </div>
@@ -782,7 +782,7 @@
                         <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Support</h3>
                         <div class="mt-4 space-y-4">
                             <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Pricing</a>
-                            <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Documentation</a>
+                            <!-- <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Documentation</a> -->
                             <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Guides</a>
                             <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">API Status</a>
                         </div>
